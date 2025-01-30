@@ -1,1 +1,9 @@
-// define the message
+// proto2 -> can cause a lot of issues
+// i want to use proto3
+
+syntax = "proto3";
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+}
