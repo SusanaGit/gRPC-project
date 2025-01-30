@@ -19,6 +19,9 @@
         <logback.version>1.5.12</logback.version>
         <jackson.version>2.18.1</jackson.version>
         <junit.version>5.11.3</junit.version>
+
+        <!-- extensions -->
+        <os.maven.plugin.version>1.7.1</os.maven.plugin.version>
     </properties>
 
     <dependencies>
@@ -69,4 +72,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>kr.motd.maven</groupId>
+                <artifactId>os-maven-plugin</artifactId>
+                <version>${os.maven.plugin.version}</version>
+            </extension>
+        </extensions>
+    </build>
+
 </project>
