@@ -4,18 +4,18 @@ import com.susanafigueroa.models.section01.PersonOuterClass;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class SimpleProtoDemo {
+public class ProtoDemo01 {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SimpleProtoDemo.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ProtoDemo01.class);
 
     public static void main(String[] args) {
 
-        var person = PersonOuterClass.Person.newBuilder()
+        var person01 = PersonOuterClass.Person.newBuilder()
                                             .setName("susana")
                                             .setAge(11)
                                             .build();
 
-        LOGGER.info("{}" , person);
+        LOGGER.info("{}" , person01);
     }
 
 }
