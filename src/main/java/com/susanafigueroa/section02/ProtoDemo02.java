@@ -17,6 +17,13 @@ public class ProtoDemo02 {
         LOGGER.info("equals {}", person1.equals(person2));
         LOGGER.info(" == {} ", (person1 == person2));
 
+        Person person3 = person1.toBuilder()
+                .setName("marc")
+                .setAge(10)
+                .build();
+
+        LOGGER.info("{}", person3);
+
     }
 
     private static Person createPerson() {
