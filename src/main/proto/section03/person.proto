@@ -1,0 +1,20 @@
+// proto2 -> can cause a lot of issues
+// i want to use proto3
+
+syntax = "proto3";
+
+package section03;
+
+option java_multiple_files = true;
+option optimize_for = CODE_SIZE;
+option java_package = "com.susanafigueroa.models.section03";
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+  string email = 3;
+  bool employed = 4;
+  double salary = 5;
+  int64 bank_account_number = 6;
+  sint32 balance = 7;
+}
