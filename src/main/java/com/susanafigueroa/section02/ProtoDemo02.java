@@ -10,13 +10,19 @@ public class ProtoDemo02 {
 
     public static void main(String[] args) {
 
-        var person02 = Person.newBuilder()
-                .setName("pol")
-                .setAge(20)
-                .build();
+        Person person1 = createPerson();
 
-        LOGGER.info("{}", person02);
+        Person person2 = createPerson();
+
+        LOGGER.info("equals {}", person1.equals(person2));
+        LOGGER.info(" == {} ", (person1 == person2));
 
     }
 
+    private static Person createPerson() {
+        return Person.newBuilder()
+                .setName("pol")
+                .setAge(20)
+                .build();
+    }
 }
