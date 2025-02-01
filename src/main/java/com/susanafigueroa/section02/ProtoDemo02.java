@@ -10,19 +10,22 @@ public class ProtoDemo02 {
 
     public static void main(String[] args) {
 
+        // compare
         Person person1 = createPerson();
-
         Person person2 = createPerson();
-
         LOGGER.info("equals {}", person1.equals(person2));
         LOGGER.info(" == {} ", (person1 == person2));
 
+        // create new person using another person object
         Person person3 = person1.toBuilder()
                 .setName("marc")
                 .setAge(10)
                 .build();
-
         LOGGER.info("{}", person3);
+
+        // null?
+        Person person4 = person1.toBuilder().clearAge().build();
+        LOGGER.info("person4: {}", person4);
 
     }
 
