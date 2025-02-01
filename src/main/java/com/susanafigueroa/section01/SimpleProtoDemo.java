@@ -1,6 +1,6 @@
 package com.susanafigueroa.section01;
 
-import com.susanafigueroa.models.PersonOuterClass;
+import com.susanafigueroa.models.section01.PersonOuterClass;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
